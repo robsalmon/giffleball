@@ -14,6 +14,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
 
   return {
+    dir: {
+      input: './',
+      output: './_site',
+      layouts: './includes',
+    },
+    templateFormats: [
+    "md",
+    "njk",
+    "liquid",
+    "pdf",
+    "css"
+    ],
     pathPrefix: '/giffleball'
   };
 };
