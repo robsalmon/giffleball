@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-permalink: /
+permalink: /index.html
 title: Web Developer Robert Salmon
 eleventyNavigation:
     key: Home
