@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: './',
       output: './_site',
-      layouts: './includes',
+      layouts: './_includes',
     },
     templateFormats: [
     "md",
@@ -26,6 +26,6 @@ module.exports = function(eleventyConfig) {
     "pdf",
     "css"
     ],
-    pathPrefix: '/giffleball'
+    pathPrefix: '/giffleball/'
   };
 };
