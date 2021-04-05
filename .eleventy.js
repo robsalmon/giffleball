@@ -12,4 +12,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("cv");
   eleventyConfig.addPassthroughCopy("img");
+
+  return {
+    pathPrefix: '/giffleball'
+  };
 };
