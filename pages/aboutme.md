@@ -82,4 +82,4 @@ Emarketeers, 28 Church Row, London, NW3 6UP
 
 ### Find out more about me
 
-[download my CV](~/cv/robsalmon.pdf) [contact me](~/contact)
+[download my CV](../cv/robsalmon.pdf) [contact me](../contact)
