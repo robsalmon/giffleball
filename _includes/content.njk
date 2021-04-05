@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+ </head>
+ <body>
+ <header>
+ <nav>
+ {% set navPages = collections.all | eleventyNavigation %}
+ <ul>
+ {%- for entry in navPages %}
+ <li><a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active" {% endif %}>{{ entry.title }}</a></li>
+ {%- endfor %}
+ </ul>
+ </nav>
+ </header>
+ 
+  <article>
+     <h1>{{ title }}</h1>
+{{ content | safe }}
+</article>
+ </body>
+</html>

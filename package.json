@@ -1,0 +1,17 @@
+{
+  "name": "giffleball",
+  "version": "1.0.0",
+  "description": "Sample Eleventy project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./_site",
+    "build": "npm run clean && eleventy",
+    "start": "eleventy --serve --watch"
+  },
+  "author": "Robert Salmon",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.1.6"
+  }
+}

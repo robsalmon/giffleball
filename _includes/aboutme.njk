@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+ </head>
+ <body>
+ <header>
+ <nav>
+ {% set navPages = collections.all | eleventyNavigation %}
+ <ul>
+ {%- for entry in navPages %}
+ <li><a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active" {% endif %}>{{ entry.title }}</a></li>
+ {%- endfor %}
+ </ul>
+ </nav>
+ </header>
+  <h1>{{ title }}</h1>
+  <ul>
+      {% for filename in images %}
+   <li><a href="img/{{ filename | url_encode }}">{{ filename }}</a></li>
+  {% endfor %}
+  </ul>
+ </body>
+</html>
