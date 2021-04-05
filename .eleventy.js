@@ -25,7 +25,6 @@ module.exports = function(eleventyConfig) {
     "liquid",
     "pdf",
     "css"
-    ],
-    pathPrefix: '/giffleball/'
+    ]
   };
 };
