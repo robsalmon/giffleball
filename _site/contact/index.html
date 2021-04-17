@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+ </head>
+ <body>
+ <header>
+ <nav>
+ 
+ <ul>
+ <li><a href="/" >Home</a></li>
+ <li><a href="/aboutme/" >About me</a></li>
+ <li><a href="/portfolio/" >Portfolio</a></li>
+ <li><a href="/skills/" >Skills</a></li>
+ <li><a href="/tutorials/" >Tutorials</a></li>
+ <li><a href="/contact/"  class="active" >Contact me</a></li>
+ </ul>
+ </nav>
+ </header>
+  <h1>Contact me</h1>
+  <p>Thank you for visiting my website. If you would like to comment on my work, contact me about a job or make some other enquiry, please complete the form below:</p>
+  <p>Fields marked <strong>*</strong> are required for submission</p>
+            <form method="post" name="contactRob" id="contactRob" title="Please use this form to contact Robert Salmon" role="form"  netlify-honeypot="bot-field" data-netlify="true">
+                
+<input type="hidden" id="beenSubmitted" name="beenSubmitted" value="beenSubmitted">
+<fieldset>
+<legend>Your personal contact details</legend>
+<div class="form-group">
+<label for="fullName" id="fNameLabel" class="control-label">Name:<strong>*</strong></label><br />
+<input name="fullName"  type="text" id="fullName" title="Please enter your name"  required aria-required="true" class="formElement col-md-3 form-control"><br />
+<span id="nameErr" class="formError" role="alert">&nbsp;</span>
+</div>
+<div class="form-group">
+<label for="email" id="emailLabel" class="control-label">Email:<strong>*</strong></label><br />
+<input type="email" name="email" id="email"   title="Please enter your email address"   required aria-required="true" class="formElement form-control">
+<br /><span id="emailErr" role="alert">&nbsp;</span>
+</div>
+<div class="form-group">
+<label for="telephone" id="telLabel" class="control-label">Telephone:</label><br />
+<input type="tel" name="telephone" id="telephone" title="Please enter your telephone number" size="20"    class="formElement form-control"></div>
+<span id="telErr">&nbsp;</span>
+</fieldset>
+<fieldset><legend>Your business details (if applicable)</legend>
+   <div class="form-group"> 
+<label for="jobTitle" class="control-label">Job Title:</label><br />
+<input type="text" name="jobTitle" id="jobTitle" size="25"   title="Please enter your job title"    class="formElement col-md-3 form-control"><br />
+   <span id="jobTitleTh">&nbsp;</span>
+   </div>
+    <div class="form-group">
+<label for="orgName" class="control-label">Organisation:</label><br />
+<input type="text" name="orgName" id="orgName" size="25"  title="Please enter the name of the organisation where you work"    class="formElement form-control"><br />
+<span id="orgNameTh">&nbsp;</span></div>
+</fieldset>
+<fieldset><legend>Your message</legend>
+    <div class="form-group">
+    <label for="subject" id="subLabel" class="control-label">Subject:<strong>*</strong></label><br />
+<input type="text" name="subject" id="subject"  size="25" title="Please enter the subject of your message"   required aria-required="true"  class="formElement form-control"><br />
+<span id="subErr" role="alert">&nbsp;</span></div>
+    <div class="form-group">
+<label for="formMessage" id="msgLabel" class="control-label">Message:<strong>*</strong></label><br />
+<textarea name="formMessage" cols="40" rows="5" id="formMessage" title="Please enter your message" required aria-required="true"  class="col-md-3 form-control">   </textarea><br />
+<span id="messErr" role="alert">&nbsp;</span></div>
+</fieldset>
+ <button type="submit" name="Submit" class="btn btn-default" id="Submit">Submit</button>
+<button type="reset" name="Reset" id="Reset" class="btn btn-default">Reset</button></form>
+ </body>
+</html>

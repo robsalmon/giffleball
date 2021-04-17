@@ -7,5 +7,5 @@ permalink: /tutorials/index.html
 eleventyNavigation:
     key: Tutorials
     title: Tutorials
-    order: 3
+    order: 4
 ---

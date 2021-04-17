@@ -5,6 +5,6 @@ title: Skills
 eleventyNavigation:
     key: Skills
     title: Skills
-    order: 2
+    order: 3
 ---
 ## HTML

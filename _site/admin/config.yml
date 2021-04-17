@@ -1,0 +1,14 @@
+backend:
+  name: github
+  repo:
+  branch: main
+collections:
+  - name: "tutorial"
+    label: "Tutorial"
+    folder: "tutorials"
+    create: true
+    fields:
+      - {label: "Tags", name: "tags", widget: "list"}
+publish_mode: editorial_workflow
+media_folder: "img"
+public_folder: "img"

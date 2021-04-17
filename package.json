@@ -14,5 +14,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.5.0"
   }
 }
