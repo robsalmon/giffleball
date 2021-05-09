@@ -3,6 +3,28 @@
  <head>
   <meta charset="utf-8">
   <title>Contact me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="theme-color" content="#39500a">
+ <script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "person",
+  "name": "Robert Salmon",
+  "jobTitle": "Web Developer",
+  "gender": "male",
+  "url": "https://www.robsalmon.me.uk",
+  "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Gravesend",
+     "addressCountry": "United Kingdom"
+  },
+  "image": "https://www.robsalmon.me.uk/images/r-salmon.jpg",
+  "email": "robdavidsalmon@msn.com",
+  "alumniOf": "Plymouth University",
+  "birthPlace": "Dartford",
+  "telephone": "+447791610387"
+}
+</script>
  </head>
  <body>
  <header>
@@ -21,7 +43,7 @@
   <h1>Contact me</h1>
   <p>Thank you for visiting my website. If you would like to comment on my work, contact me about a job or make some other enquiry, please complete the form below:</p>
   <p>Fields marked <strong>*</strong> are required for submission</p>
-            <form method="post" name="contactRob" id="contactRob" title="Please use this form to contact Robert Salmon" role="form"  netlify-honeypot="bot-field" data-netlify="true">
+            <form action="/contact/success" method="post" name="contactRob" id="contactRob" title="Please use this form to contact Robert Salmon" role="form"  netlify-honeypot="bot-field" data-netlify="true">
                 
 <input type="hidden" id="beenSubmitted" name="beenSubmitted" value="beenSubmitted">
 <fieldset>
