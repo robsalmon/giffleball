@@ -43,7 +43,7 @@
   <h1>Contact me</h1>
   <p>Thank you for visiting my website. If you would like to comment on my work, contact me about a job or make some other enquiry, please complete the form below:</p>
   <p>Fields marked <strong>*</strong> are required for submission</p>
-            <form action="/contact/success" method="post" name="contactRob" id="contactRob" title="Please use this form to contact Robert Salmon" role="form"  netlify-honeypot="bot-field" data-netlify="true">
+            <form action="/contact/success" method="post" name="contactRob" id="contactRob" title="Please use this form to contact Robert Salmon" role="form"  netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                 
 <input type="hidden" id="beenSubmitted" name="beenSubmitted" value="beenSubmitted">
 <fieldset>
@@ -85,6 +85,7 @@
 <span id="messErr" role="alert">&nbsp;</span></div>
 </fieldset>
     <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      <div data-netlify-recaptcha="true"></div>
  <button type="submit" name="Submit" class="btn btn-default" id="Submit">Submit</button>
 <button type="reset" name="Reset" id="Reset" class="btn btn-default">Reset</button></form>
  </body>
