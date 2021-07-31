@@ -24,7 +24,7 @@
  </nav>
  </header>
  
-  <article>
+  <article class="container" id="content">
      <h1>About me</h1>
 <p>I am a Gravesend-based web developer with skills in .NET, C#, PHP and Azure.</p>
 <h2>Employment</h2>
@@ -74,5 +74,39 @@ Certificate Number: GR657016889RS</p>
 <p><a href="../cv/robsalmon.pdf">download my CV</a> <a href="../contact">contact me</a></p>
 
 </article>
- </body>
+
+  <footer class="container">
+            <address itemscope itemtype="https://schema.org/Person">
+                <span>&copy; <span itemprop="name">Robert Salmon</span>, <time datetime="2021">2021</time></span><br>
+                <span itemprop="jobTitle">Web developer</span><br>
+                <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="addressLocality">London</span>,  <span itemprop="addressCountry">United Kingdom</span>
+                </span><br>
+                <a href="https://www.linkedin.com/in/robdsalmon" itemprop="url">Linkedin profile</a>&nbsp;&nbsp;
+                <a href="https://github.com/robsalmon" itemprop="url">Fork me on GitHub</a>
+            </address>
+      </footer>
+
+    <!-- /container -->
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://romantic-hawking-a5d466.netlify.app/js/bootstrap.min.js"></script>  
+    <script>
+ if ('serviceWorker' in navigator) {
+    
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('https://romantic-hawking-a5d466.netlify.app/sw.js').then(function(registration) {
+         
+        }).catch(function(error) {
+    });
+});
+ }
+</script>
+    <noscript>Scripting is currently disabled in your browser. Although you can use this site without scripting, you can add more functionality by enabling scripting.</noscript>
+    </body>
 </html>
+
