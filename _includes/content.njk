@@ -1,26 +1,4 @@
-<!doctype html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="theme-color" content="#39500a">
-    <link  href="/css/portfolio-bootstrap.min.css" rel="stylesheet" media="screen">
-     <link href="/css/print.min.css" rel="stylesheet" media="print">
-     <link rel="manifest" href="https://romantic-hawking-a5d466.netlify.app/manifest.json">
- </head>
- <body>
- <header>
- <nav>
- {% set navPages = collections.all | eleventyNavigation %}
- <ul>
- {%- for entry in navPages %}
- <li><a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active" {% endif %}>{{ entry.title }}</a></li>
- {%- endfor %}
- </ul>
- </nav>
- </header>
- 
+  {% include "_header.njk" %}
   <article class="container" id="content">
      <h1>{{ title }}</h1>
 {{ content | safe }}
