@@ -404,7 +404,7 @@ function validate()
         {
        
           field = Function('"use strict;"; return (' + contactMeSpace.validations[i][0] + ')')();
-          console.log(field);
+          
             checkToMake = contactMeSpace.validations[i][1];
             switch (checkToMake)
             {
