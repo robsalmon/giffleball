@@ -104,7 +104,7 @@
 <textarea name="formMessage" cols="40" rows="5" id="formMessage" title="Please enter your message" required aria-required="true"  class="col-md-3 form-control">   </textarea><br />
 <span id="messErr" role="alert">&nbsp;</span></div>
 </fieldset>
-    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    <label for="bot-field" id="bot-field-label">Don’t fill this out if you’re human: <input type="hidden" name="bot-field" id="bot-field" /></label>
       <div data-netlify-recaptcha="true"></div>
  <button type="submit" name="Submit" class="btn btn-default" id="Submit">Submit</button>
 <button type="reset" name="Reset" id="Reset" class="btn btn-default">Reset</button></form>
