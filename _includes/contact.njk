@@ -42,15 +42,15 @@
                         <span class="icon-bar"></span>
                     </button>  
  <header>
- <img src="/images/rsalmonlogo.png" width="20" height="36" alt="" role="presentation" class="logo" />
- <span class="h1">Robert Salmon</span>
+ <img src="/img/rsalmonlogo.png" width="20" height="36" alt="" role="presentation" class="logo" />
+ <span class="h1"><a class="navbar-brand" href="">Robert Salmon</a></span>
   </header>
   </div>
  <nav class="navbar-collapse collapse">
  {% set navPages = collections.all | eleventyNavigation %}
  <ul class="nav navbar-nav">
  {%- for entry in navPages %}
- <li><a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active" {% endif %}>{{ entry.title }}</a></li>
+ <li {% if entry.url == page.url %} class="active" {% endif %}><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
  {%- endfor %}
  </ul>
  </nav>

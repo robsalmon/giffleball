@@ -1,26 +1,17 @@
-<!doctype html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/portfolio-bootstrap.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="theme-color" content="#39500a">
-    <link  href="/css/portfolio-bootstrap.min.css" rel="stylesheet" media="screen">
-     <link href="/css/print.min.css" rel="stylesheet" media="print">
-     <link rel="manifest" href="https://romantic-hawking-a5d466.netlify.app/manifest.json">
- </head>
- <body>
- <header>
- <nav>
- {% set navPages = collections.all | eleventyNavigation %}
- <ul>
- {%- for entry in navPages %}
- <li><a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active" {% endif %}>{{ entry.title }}</a></li>
- {%- endfor %}
- </ul>
- </nav>
- </header>
-  <h1>{{ title }}</h1>
- </body>
-</html>
+  {% include "_header.njk" %}
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+        <h1>{{ title }}</h1>
+
+    {% for portfolio in collections.portfolio %}
+    <article>
+<h2>
+<a href="{{ portfolio.url | url }}">{{ portfolio.data.pageTitle }}</a>
+</h2>
+{{ portfolio.data.intro }}
+</article>
+
+    {% endfor %} 
+    </div></div></div>
+  {% include "_footer.njk" %}

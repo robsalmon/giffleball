@@ -1,5 +1,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { minify } = require("terser");
+const { DateTime } = require("luxon");
+//const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -10,6 +12,10 @@ module.exports = function(eleventyConfig) {
     "pdf",
     "css"
   ]);
+
+  eleventyConfig.addFilter("readableYear", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("yyyy");
+  });
 
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
 code,
@@ -27,6 +33,8 @@ callback
     }
   }
   );
+
+  
 
   eleventyConfig.addPassthroughCopy("cv");
   eleventyConfig.addPassthroughCopy("img");

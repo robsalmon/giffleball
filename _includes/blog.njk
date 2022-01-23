@@ -1,28 +1,18 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Tutorials</title>
-    </head>
-    <body>
-         <header>
- <nav>
- {% set navPages = collections.all | eleventyNavigation %}
- <ul>
- {%- for entry in navPages %}
- <li><a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active"{% endif %}>{{ entry.title }}</a></li>
- {%- endfor %}
- </ul>
- </nav>
- </header>
+  {% include "_header.njk" %}
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
         <h1>{{ title }}</h1>
 
     {% for tutorial in collections.tutorial %}
+    <article>
 <h2>
 <a href="{{ tutorial.url | url }}">{{ tutorial.data.pageTitle }}</a>
 </h2>
 {{ tutorial.data.intro }}
+</article>
 
     {% endfor %} 
-    </body>
-</html>
+    </div></div></div>
+
+  {% include "_footer.njk" %}>
