@@ -6,12 +6,13 @@ self.addEventListener("install", function (e) {
         caches.open("robsalmon").then(function (cache) {
             return cache.addAll([
 		"index.html",
+        "/about/index.html",
 		"offline.html",
                 "/css/portfolio-bootstrap.min.css",
                 "/css/print.min.css",
-                "/js/bootstrap.min.js",
-                "/js/formcheck.js",
-                "/images/rsalmonlogo.png",
+                "/scripts/bootstrap.min.js",
+                "/scripts/formcheck.js",
+                "/img/rsalmonlogo.png",
                "/cv/robsalmoncv.pdf"
             ]);
         }).catch(function(error) {
