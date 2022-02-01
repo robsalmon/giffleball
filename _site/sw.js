@@ -5,7 +5,7 @@ self.addEventListener("install", function (e) {
     e.waitUntil(
         caches.open("robsalmon").then(function (cache) {
             return cache.addAll([
-		"index.php",
+		"index.html",
 		"offline.html",
                 "/css/portfolio-bootstrap.min.css",
                 "/css/print.min.css",
