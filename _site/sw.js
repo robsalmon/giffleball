@@ -5,7 +5,7 @@ self.addEventListener("install", function (e) {
     e.waitUntil(
         caches.open("robsalmon").then(function (cache) {
             return cache.addAll([
-		"index.html",
+		"index.php",
 		"offline.html",
                 "/css/portfolio-bootstrap.min.css",
                 "/css/print.min.css",
@@ -23,8 +23,8 @@ self.addEventListener("install", function (e) {
 self.addEventListener("fetch", function (event) {
     "use strict";
     event.respondWith(
-        caches.match(event.request).then(function (response) {
-            return response || fetch(event.request).then(());
+        caches.match(event.request.url).then(function (response) {
+            return response || fetch(event.request);
         }).catch(function(error) {
  return caches.match(offlineUrl);
         })
