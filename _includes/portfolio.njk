@@ -3,15 +3,18 @@
       <div class="row">
           <div class="col-md-12">
         <h1>{{ title }}</h1>
-
-    {% for portfolio in collections.portfolio %}
-    <article>
-<h2>
-<a href="{{ portfolio.url | url }}">{{ portfolio.data.pageTitle }}</a>
-</h2>
-{{ portfolio.data.intro }}
-</article>
+<h2>All Work</h2>
+<div class="row">
+    {% for latest in collections.latest %}
+  <div class="col-md-12">
+{% image "img/advertised-planning-apps-sc.png", "" %}
+<h3>
+<a href="{{ latest.url | url }}">{{ latest.data.pageTitle }}</a>
+</h3>
+{{ latest.data.intro }}
+</div>
 
     {% endfor %} 
+    </div>
     </div></div></div>
   {% include "_footer.njk" %}
