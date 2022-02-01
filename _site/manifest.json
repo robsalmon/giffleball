@@ -1,0 +1,21 @@
+{
+  "short_name": "Rob Salmon",
+  "name": "Rob Salmon's Portfolio",
+  "icons": [
+    {
+      "src":"img/rsalmonlogo192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+      {
+      "src":"img/rsalmonlogo512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#39500a",
+  "display": "standalone"
+}
