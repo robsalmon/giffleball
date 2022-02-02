@@ -6,7 +6,7 @@ self.addEventListener("install", function (e) {
         caches.open("robsalmon").then(function (cache) {
             return cache.addAll([
 		"index.html",
-        "/about/index.html",
+        "/aboutme/index.html",
 		"offline.html",
                 "/css/portfolio-bootstrap.min.css",
                 "/css/print.min.css",
