@@ -14,6 +14,8 @@ First, let’s me define exactly what I mean by ’empty’. By ’empty’ I me
 * be blank (contains no characters)
 * contain only white space.
 
+### How to check if the string variable is undefined
+
 You can check if a string variable is undefined using JavaScript’s global **[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)** property:
 
 ```javascript
