@@ -24,3 +24,14 @@ if (typeof potentialString === "undefined") {
  return 'Undefined value!';
 }
 ```
+
+### How to check if the string variable is null
+
+You can check if the string variable is null using JavaScript’s primitive value [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null):
+
+```javascript
+var potentialString;
+if (potentialString === null) { 
+ return 'null value!';
+}
+```
