@@ -1,4 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { minify } = require("terser");
 const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
@@ -23,6 +24,7 @@ async function imageShortcode(src, alt, sizes) {
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setTemplateFormats([
     "md",
     "njk",
@@ -30,7 +32,7 @@ module.exports = function(eleventyConfig) {
     "pdf",
     "css"
   ]);
-
+  
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);

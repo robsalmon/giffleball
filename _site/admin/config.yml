@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo:
+  repo: robsalmon/giffleball
   branch: main
 collections:
   - name: "tutorial"
@@ -8,7 +8,12 @@ collections:
     folder: "tutorials"
     create: true
     fields:
-      - {label: "Tags", name: "tags", widget: "list"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "bloglayout.liquid"}
+    - {label: "Tags", name: "tags", widget: "list"}
+    - {label: "Page title", name: "pageTitle", widget: "string"}
+    - {label: "Intro", name: "intro", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    
 publish_mode: editorial_workflow
 media_folder: "img"
 public_folder: "img"

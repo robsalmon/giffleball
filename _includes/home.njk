@@ -20,11 +20,13 @@
  </ul>
  </nav>
  </header>
+ <main id="content">
   <h1>{{ title }}</h1>
   <ul>
       {% for filename in images %}
    <li><a href="img/{{ filename | url_encode }}">{{ filename }}</a></li>
   {% endfor %}
   </ul>
+  </main>
  </body>
 </html>

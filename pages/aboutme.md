@@ -76,7 +76,7 @@ Result: 100&percnt; in exam
 
 BCS, First Floor, Block D, North Star House, North Star Avenue, Swindon, UK, SN2 1FA
 
-#### SEO Copywriting
+### SEO Copywriting
 
 Emarketeers, 28 Church Row, London, NW3 6UP
 
