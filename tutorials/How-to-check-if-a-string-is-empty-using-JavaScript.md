@@ -1,6 +1,6 @@
 ---
 tags: tutorial
-layout: bloglayout.liquid
+layout: bloglayout.njk
 pageTitle: How to check if a string is empty using JavaScript
 intro: For example when you need to check if a user has has entered any text in a form field.
 ---

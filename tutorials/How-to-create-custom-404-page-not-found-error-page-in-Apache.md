@@ -1,6 +1,6 @@
 ---
 tags: tutorial
-layout: bloglayout.liquid
+layout: bloglayout.njk
 pageTitle: How to create a custom 404 ‘page not found’ error page in Apache
 intro: A 404 HTTP error message displays to customers of your website if they follow a broken or dead link.
 ---

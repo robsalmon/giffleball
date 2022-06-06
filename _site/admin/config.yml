@@ -8,7 +8,7 @@ collections:
     folder: "tutorials"
     create: true
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "bloglayout.liquid"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "bloglayout.njk"}
     - {label: "Tags", name: "tags", widget: "list"}
     - {label: "Page title", name: "pageTitle", widget: "string"}
     - {label: "Intro", name: "intro", widget: "string"}
