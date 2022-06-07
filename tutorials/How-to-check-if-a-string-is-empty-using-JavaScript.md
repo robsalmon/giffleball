@@ -1,5 +1,5 @@
 ---
-layout: bloglayout.liquid
+layout: bloglayout.njk
 tags: tutorial
 pageTitle: How to check for an empty string in JavaScript
 intro: For example when you need to check if a user has has entered any text in
