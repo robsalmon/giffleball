@@ -1,10 +1,19 @@
   {% include "_header.njk" %}
- <main id="content">
-  <h1>{{ title }}</h1>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron masthead">
+            <div class="container" id="content">
+  <h2>{{ title }}</h2>
+   <p> I am Robert Salmon. A Kent-based web developer with strong web and print editing, and database design skills</p>
+   <p><a href="https://www.robsalmon.me.uk/aboutme/index.php" class="btn btn-primary btn-lg">More about me</a></p>
+  </div></div>
+   <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-9">
   <ul>
       {% for filename in images %}
    <li><a href="img/{{ filename | url_encode }}">{{ filename }}</a></li>
   {% endfor %}
   </ul>
-  </main>
+  </div></div></div>
   {% include "_footer.njk" %}
