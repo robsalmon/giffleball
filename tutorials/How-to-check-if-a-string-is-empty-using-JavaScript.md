@@ -1,10 +1,12 @@
 ---
 layout: bloglayout.liquid
 tags: tutorial
-pageTitle: How to check if a string is empty using JavaScript
+pageTitle: How to check for an empty string in JavaScript
 intro: For example when you need to check if a user has has entered any text in
   a form field.
 ---
+
+
 
 
 There are many occasions when you might need to check if a supplied string contains any text. For example when you need to check if a user has entered any text in a form field. Here’s how you can check:
@@ -66,4 +68,10 @@ You can combine all the aforementioned checks as follows:
 if (stringValue === null || stringValue === undefined || stringValue.length === 0) {
 return 'string is is either null, undefined, empty or blank';
 }
+```
+
+However since all of the aforementioned would return true, we could rewrite the above more succinctly as follows:
+
+```
+
 ```
