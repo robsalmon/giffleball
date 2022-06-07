@@ -61,3 +61,9 @@ Both effectively check if the length of the string is zero.
 ## Combining checks for undefined, null and blank strings
 
 You can combine all the aforementioned checks as follows:
+
+```javascript
+if (stringValue === null || stringValue === undefined || stringValue.length === 0) {
+return 'string is is either null, undefined, empty or blank';
+}
+```
