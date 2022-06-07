@@ -72,6 +72,6 @@ return 'string is is either null, undefined, empty or blank';
 
 However since all of the aforementioned would return true, we could rewrite the above more succinctly as follows:
 
-```
-
+```javascript
+if(!stringValue) { return 'string is is either null, undefined, empty or blank'; }
 ```
