@@ -5,10 +5,6 @@ pageTitle: How to check for an empty string in JavaScript
 intro: For example when you need to check if a user has has entered any text in
   a form field.
 ---
-
-
-
-
 There are many occasions when you might need to check if a supplied string contains any text. For example when you need to check if a user has entered any text in a form field. Here’s how you can check:
 
 First, let’s me define exactly what I mean by ’empty’. By ’empty’ I mean that the string could:
@@ -74,4 +70,20 @@ However since all of the aforementioned would return true, we could rewrite the 
 
 ```javascript
 if(!stringValue) { return 'string is is either null, undefined, empty or blank'; }
+```
+
+## How to check if the string only contains whitespace
+
+In newer browsers you can check if the string only contains whitespace by checking if it is empty once the string has been trimmed using the trim function. (You will need to use the polyfill for older browsers):
+
+```javascript
+var stringWithWhiteSpace = ' '; if (!stringWithWhiteSpace.trim()) { return "String is empty!"; }
+```
+
+## Combining both checks
+
+The final version of the check should like this:
+
+```javascript
+var stringWithWhiteSpace = ' '; if(!stringWithWhiteSpace || !stringWithWhiteSpace.trim()) { return "This is an empty string!"; }
 ```
