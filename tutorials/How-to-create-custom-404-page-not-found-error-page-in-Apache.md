@@ -65,3 +65,7 @@ You can use an FTP program such as FileZilla to do this.
 ## 3. Create a file called .htaccess
 
 Add the line `ErrorDocument 404 /notfound.html` to this file and save it as ‘.htaccess’; not ‘.htaccess.txt’ or ‘blahblah.htaccess’. .htaccess is the file extension. It should look like this:
+
+```shell
+ErrorDocument 401 /notauthorised.html
+```
