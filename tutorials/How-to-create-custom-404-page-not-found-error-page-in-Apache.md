@@ -24,3 +24,5 @@ Create a basic html file called notfound.html. It should look something like thi
     </body>
 </html>
 ```
+
+The title and level one heading of your page should clearly state the reason why the customer has ended up on that page:
