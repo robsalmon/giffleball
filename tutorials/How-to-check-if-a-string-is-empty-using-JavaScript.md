@@ -75,3 +75,7 @@ if(!stringValue) { return 'string is is either null, undefined, empty or blank';
 ## How to check if the string only contains whitespace
 
 In newer browsers you can check if the string only contains whitespace by checking if it is empty once the string has been trimmed using the trim function. (You will need to use the polyfill for older browsers):
+
+```javascript
+var stringWithWhiteSpace = ' '; if (!stringWithWhiteSpace.trim()) { return "String is empty!"; }
+```
