@@ -40,3 +40,20 @@ The title and level one heading of your page should clearly state the reason why
     </body>
 </html>
 ```
+
+It’s also a good idea to explain what happened and why:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 error: page cannot be found</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>404 error: page cannot be found</h1>
+<h2>What happened?</h2><p>The page you requested cannot be found.</p><h2>Why did this happen?</h2><p>You may have accidentally typed in an incorrect URL (address) or the page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+    </body>
+</html>
+```
