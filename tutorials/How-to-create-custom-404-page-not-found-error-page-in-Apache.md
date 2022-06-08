@@ -57,3 +57,5 @@ It’s also a good idea to explain what happened and why:
     </body>
 </html>
 ```
+
+## 2. Upload the notfound.html to the main directory of your website
