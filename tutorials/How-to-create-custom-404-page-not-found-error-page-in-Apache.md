@@ -1,7 +1,7 @@
 ---
 layout: bloglayout.njk
 tags: tutorial
-pageTitle: How to create a custom 404 error page in Apache
+title: How to create a custom 404 error page in Apache
 intro: A 404 HTTP error message displays to customers of your website if they
   follow a broken or dead link.
 ---

@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>How to check for an empty string in JavaScript</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="theme-color" content="#39500a">
     <link  href="/css/portfolio-bootstrap.min.css" rel="stylesheet" media="screen">
@@ -45,7 +45,7 @@
                     </button>  
  <header>
  <img src="/img/rsalmonlogo.png" width="20" height="36" alt="" role="presentation" class="logo" /> 
- <span class="h1"><a class="navbar-brand" href="">Robert Salmon</a></span>
+ <span class="h1"><a class="navbar-brand" href="/">Robert Salmon</a></span>
   </header>
   </div>
  <nav class="navbar-collapse collapse">
@@ -64,7 +64,7 @@
   <main id="content" class="container">
     <div class="row">
   <article class="col-md-9">
-       <h1>How to check if a string is empty using JavaScript</h1>
+       <h1>How to check for an empty string in JavaScript</h1>
 <p>There are many occasions when you might need to check if a supplied string contains any text. For example when you need to check if a user has entered any text in a form field. Here’s how you can check:</p>
 <p>First, let’s me define exactly what I mean by ’empty’. By ’empty’ I mean that the string could:</p>
 <ul>
@@ -73,12 +73,27 @@
 <li>be blank (contains no characters)</li>
 <li>contain only white space.</li>
 </ul>
-<h3>How to check if the string variable is undefined</h3>
+<h2>How to check if the string variable is undefined</h2>
 <p>You can check if a string variable is undefined using JavaScript’s global <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></strong> property:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> potentialString<span class="token punctuation">;</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> potentialString <span class="token operator">===</span> <span class="token string">"undefined"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <br> <span class="token keyword">return</span> <span class="token string">'Undefined value!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<h3>How to check if the string variable is null</h3>
+<h2>How to check if the string variable is null</h2>
 <p>You can check if the string variable is null using JavaScript’s primitive value <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></strong>:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> potentialString<span class="token punctuation">;</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>potentialString <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <br> <span class="token keyword">return</span> <span class="token string">'null value!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h2>How to check if the string variable is blank</h2>
+<p>You can check is a string is blank by either 1. comparing to a empty string literal or 2. checking that the string’s length:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> blankString <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span><br> <br><span class="token comment">// 1. Checking by comparing to an empty string literal</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>blankString <span class="token operator">===</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <br> <span class="token keyword">return</span> <span class="token string">'empty string!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br> <br><span class="token comment">// 2. Checking that string length is zero</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>blankString<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword">return</span> <span class="token string">'string length is zero'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Both effectively check if the length of the string is zero.</p>
+<h2>Combining checks for undefined, null and blank strings</h2>
+<p>You can combine all the aforementioned checks as follows:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>stringValue <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> stringValue <span class="token operator">===</span> <span class="token keyword">undefined</span> <span class="token operator">||</span> stringValue<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword">return</span> <span class="token string">'string is is either null, undefined, empty or blank'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>However since all of the aforementioned would return true, we could rewrite the above more succinctly as follows:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>stringValue<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">'string is is either null, undefined, empty or blank'</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
+<h2>How to check if the string only contains whitespace</h2>
+<p>In newer browsers you can check if the string only contains whitespace by checking if it is empty once the string has been trimmed using the trim function. (You will need to use the polyfill for older browsers):</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> stringWithWhiteSpace <span class="token operator">=</span> <span class="token string">' '</span><span class="token punctuation">;</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>stringWithWhiteSpace<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">"String is empty!"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
+<h2>Combining both checks</h2>
+<p>The final version of the check should like this:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> stringWithWhiteSpace <span class="token operator">=</span> <span class="token string">' '</span><span class="token punctuation">;</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>stringWithWhiteSpace <span class="token operator">||</span> <span class="token operator">!</span>stringWithWhiteSpace<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">"This is an empty string!"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
 
 </article>
 </div>

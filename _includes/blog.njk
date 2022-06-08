@@ -7,7 +7,7 @@
     {% for tutorial in collections.tutorial %}
     <article>
 <h2>
-<a href="{{ tutorial.url | url }}">{{ tutorial.data.pageTitle }}</a>
+<a href="{{ tutorial.url | url }}">{{ tutorial.data.title }}</a>
 </h2>
 {{ tutorial.data.intro }}
 </article>
