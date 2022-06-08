@@ -26,3 +26,17 @@ Create a basic html file called notfound.html. It should look something like thi
 ```
 
 The title and level one heading of your page should clearly state the reason why the customer has ended up on that page:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 error: page cannot be found</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>404 error: page cannot be found</h1>
+    </body>
+</html>
+```
