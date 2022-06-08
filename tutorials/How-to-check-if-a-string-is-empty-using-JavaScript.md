@@ -79,3 +79,11 @@ In newer browsers you can check if the string only contains whitespace by checki
 ```javascript
 var stringWithWhiteSpace = ' '; if (!stringWithWhiteSpace.trim()) { return "String is empty!"; }
 ```
+
+## Combining both checks
+
+The final version of the check should like this:
+
+```javascript
+var stringWithWhiteSpace = ' '; if(!stringWithWhiteSpace || !stringWithWhiteSpace.trim()) { return "This is an empty string!"; }
+```
