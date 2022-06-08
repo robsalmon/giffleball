@@ -69,3 +69,7 @@ Add the line `ErrorDocument 404 /notfound.html` to this file and save it as ‘.
 ```shell
 ErrorDocument 401 /notauthorised.html
 ```
+
+## 4. Upload the .htaccess file to main directory of your website
+
+Again, you can use an FTP program such as FileZilla to do this.
