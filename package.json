@@ -24,6 +24,6 @@
     "multiparty": "^4.2.2",
     "netlify-cms-app": "^2.15.66",
     "nodemailer": "^6.5.0",
-    "terser": "^5.7.0"
+    "terser": "^5.14.2"
   }
 }
